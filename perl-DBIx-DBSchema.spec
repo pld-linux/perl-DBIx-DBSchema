@@ -1,11 +1,12 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	DBIx
 %define		pnam	DBSchema
 Summary:	DBIx::DBSchema - Database-independent schema objects
+Summary(pl):	DBIx::DBSchema - obiekty schematów niezale¿ne od bazy danych
 Name:		perl-DBIx-DBSchema
 Version:	0.31
 Release:	1
@@ -22,7 +23,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'perl(DBD::Oracle)'
 
 %description
-DBIx::DBSchema -- Database-independent schema objects.
+DBIx::DBSchema - Database-independent schema objects.
+
+%description -l pl
+DBIx::DBSchema - obiekty schematów niezale¿ne od bazy danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -44,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
+%{perl_vendorlib}/DBIx/*.pm
+%{perl_vendorlib}/DBIx/DBSchema
 %{_mandir}/man3/*
