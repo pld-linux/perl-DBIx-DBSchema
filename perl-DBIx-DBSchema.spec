@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	DBSchema
 Summary:	DBIx::DBSchema - Database-independent schema objects
-Summary(pl):	DBIx::DBSchema - obiekty schematÛw niezaleøne od bazy danych
+Summary(pl.UTF-8):   DBIx::DBSchema - obiekty schemat√≥w niezale≈ºne od bazy danych
 Name:		perl-DBIx-DBSchema
 Version:	0.31
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 DBIx::DBSchema - Database-independent schema objects.
 
-%description -l pl
-DBIx::DBSchema - obiekty schematÛw niezaleøne od bazy danych.
+%description -l pl.UTF-8
+DBIx::DBSchema - obiekty schemat√≥w niezale≈ºne od bazy danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
