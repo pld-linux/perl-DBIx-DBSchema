@@ -8,13 +8,13 @@
 Summary:	DBIx::DBSchema - Database-independent schema objects
 Summary(pl.UTF-8):	DBIx::DBSchema - obiekty schematów niezależne od bazy danych
 Name:		perl-DBIx-DBSchema
-Version:	0.36
+Version:	0.40
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/DBIx/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	130cecbbee8687afe7b5114ee7c94044
+# Source0-md5:	2b4be96f6c8301b811c3e6edd35c1aa9
 URL:		http://search.cpan.org/dist/DBIx-DBSchema/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
